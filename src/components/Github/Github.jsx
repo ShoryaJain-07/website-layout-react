@@ -4,8 +4,9 @@ import { useLoaderData } from 'react-router-dom'
 function Github() {
   const data=useLoaderData()
   return (
-    <div className='h-screen w-full border-8'>Github Followers : {data.followers}
-    <img src={data.avatar_url} alt="Git picture" className='w-1/2 h-screen' />
+    <div className='h-3/4 w-full  bg-gray-800  border-8 flex '>
+    <div><img src={data.avatar_url} alt="Git picture" className='w-full max-w-md h-full' /></div>
+    <div className='flex items-center justify-center w-3/4 text-center text-white text-4xl'>Github Followers : {data.followers}</div>
     </div>
   )
 }
